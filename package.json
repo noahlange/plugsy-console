@@ -1,0 +1,26 @@
+{
+  "name": "plugsy-console",
+  "license": "MIT",
+  "version": "0.1.0",
+  "scripts": {
+    "build": "webpack --mode none",
+    "watch": "webpack --watch"
+  },
+  "dependencies": {
+    "firacode": "^1.205.0",
+    "md": "^0.6.0",
+    "plugsy": "noahlange/plugsy",
+    "simple-console": "1j01/simple-console"
+  },
+  "devDependencies": {
+    "css-loader": "^1.0.0",
+    "style-loader": "^0.23.1",
+    "terser-webpack-plugin": "^1.1.0",
+    "ts-loader": "^5.2.1",
+    "tslint": "^5.11.0",
+    "tslint-config-prettier": "^1.15.0",
+    "typescript": "^3.1.1",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2"
+  }
+}

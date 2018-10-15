@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Mono');
+
+.dark {
+  background-color: rgba(0,0,0,0.75);
+}
+
+.simple-console:not(.open) {
+  top: -24px;
+}
+
+.simple-console {
+  z-index: 100;
+  position: fixed;
+	font-family: "Fira Mono";
+	font-size: 11px;
+  transition: 0.2s all;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+.simple-console em {
+  color: lightgrey;
+  font-weight: normal;
+}
+
+.simple-console h1,
+.simple-console h2,
+.simple-console h3,
+.simple-console h4,
+.simple-console h5,
+.simple-console h6 { font-size: 11px; margin-bottom: 0.5em; }
+.simple-console ul,
+.simple-console li { list-style-position: inside; margin: 0.5em 0; padding: 0; }
+.simple-console p { padding: 0; }
+
+.simple-console-output {
+  transition: 0.2s height;
+  flex-grow: 1;
+}
+
+.simple-console:not(.open) .simple-console-output{
+  height: 0px;
+}
+
+.simple-console.open .simple-console-output {
+  height: 200px;
+}
+
+.simple-console ::-webkit-scrollbar {
+  width: 8px;
+}
+ 
+.simple-console ::-webkit-scrollbar-track {
+  background: gray;
+}
+ 
+.simple-console ::-webkit-scrollbar-thumb {
+  background: white;
+}
+
+.simple-console input {
+  box-shadow: none;
+	font-family: "Fira Mono";
+}
